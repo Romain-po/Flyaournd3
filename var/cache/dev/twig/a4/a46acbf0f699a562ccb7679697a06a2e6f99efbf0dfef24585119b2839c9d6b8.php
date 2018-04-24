@@ -172,6 +172,6 @@ class __TwigTemplate_20e0610c2f449405d6c2ac07357585c42706deb85ca7c032cb320a4d2f1
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/wilder/Documents/test/flyaround/app/Resources/views/base.html.twig");
+", "base.html.twig", "/home/wilder/Documents/FLYAROUND/Flyaournd3/app/Resources/views/base.html.twig");
     }
 }

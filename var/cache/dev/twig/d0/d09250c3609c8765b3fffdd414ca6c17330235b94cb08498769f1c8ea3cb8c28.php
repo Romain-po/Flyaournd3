@@ -591,6 +591,6 @@ class __TwigTemplate_cf25f75705ae34858678629fc01f19497454536642dc47934b143ebba32
         }())
     </script>
 {% endblock %}
-", "@WebProfiler/Profiler/layout.html.twig", "/home/wilder/Documents/test/flyaround/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/layout.html.twig");
+", "@WebProfiler/Profiler/layout.html.twig", "/home/wilder/Documents/FLYAROUND/Flyaournd3/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/layout.html.twig");
     }
 }

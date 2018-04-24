@@ -1063,6 +1063,6 @@ class __TwigTemplate_bc84eb26cf7f71a1808088293250bbc88505c0a6c62d2a72e5059137899
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/request.html.twig", "/home/wilder/Documents/test/flyaround/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/request.html.twig");
+", "@WebProfiler/Collector/request.html.twig", "/home/wilder/Documents/FLYAROUND/Flyaournd3/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/request.html.twig");
     }
 }

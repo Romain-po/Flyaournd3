@@ -1252,6 +1252,6 @@ class __TwigTemplate_2fc8c442803e2f3227bd78d166595caa2f639567a3da8fcbce030734554
         display: none;
     }
 }
-", "@WebProfiler/Profiler/toolbar.css.twig", "/home/wilder/Documents/test/flyaround/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/toolbar.css.twig");
+", "@WebProfiler/Profiler/toolbar.css.twig", "/home/wilder/Documents/FLYAROUND/Flyaournd3/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/toolbar.css.twig");
     }
 }

@@ -120,6 +120,6 @@ class __TwigTemplate_1e9e1f8ed6bf16dd1e2c59c3acc6188977088140fd9d9ac3cea5b9d6ba9
         </li>
     </ul>
 {% endblock %}
-", "user/new.html.twig", "/home/wilder/Documents/test/flyaround/app/Resources/views/user/new.html.twig");
+", "user/new.html.twig", "/home/wilder/Documents/FLYAROUND/Flyaournd3/app/Resources/views/user/new.html.twig");
     }
 }
