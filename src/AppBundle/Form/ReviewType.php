@@ -33,7 +33,8 @@ class ReviewType extends AbstractType
                 },
                 'choice_label' => 'lastname'))
             ->add('reviewAuthor');
-    }/**
+    }
+    /**
      * {@inheritdoc}
      */
     public function configureOptions(OptionsResolver $resolver)

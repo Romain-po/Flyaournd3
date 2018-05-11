@@ -29,7 +29,7 @@ class ReservationType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'appbundle_reservation';
+        return 'Appbundle_reservation';
     }
 
 
