@@ -10,6 +10,8 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
+    time_unit: h
+
 
 framework:
     #esi: ~
@@ -38,6 +40,9 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    globals:
+            unit: '%unit%'
+            time_unit : '%time_unit%'
 
 # Doctrine Configuration
 doctrine:

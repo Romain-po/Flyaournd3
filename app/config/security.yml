@@ -23,6 +23,9 @@ security:
             pattern: ^/
             form_login:
                 provider: fos_userbundle
+                default_target_path: /
+                always_use_default_target_path: true
+                login_path: /login
             logout:       true
             anonymous:    true
             # activate different way to authenticate

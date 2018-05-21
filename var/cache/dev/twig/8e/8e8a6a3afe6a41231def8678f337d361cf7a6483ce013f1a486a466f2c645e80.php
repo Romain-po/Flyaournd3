@@ -97,9 +97,36 @@ class __TwigTemplate_4db7e0f4dc4b1dcaafedde630148762666f7bc4cec1a1303492850e86ca
         echo "</td>
             </tr>
             <tr>
-                <th>Wasdone</th>
+                <th> Distance</th>
                 <td>";
         // line 34
+        if (($context["distance"] ?? $this->getContext($context, "distance"))) {
+            echo " ";
+            echo twig_escape_filter($this->env, twig_number_format_filter($this->env, ($context["distance"] ?? $this->getContext($context, "distance")), 2, ",", " "), "html", null, true);
+            echo " ";
+        }
+        echo " ";
+        echo twig_escape_filter($this->env, ($context["unit"] ?? $this->getContext($context, "unit")), "html", null, true);
+        echo "</td>
+            </tr>
+            <tr>
+                <th> Time Travel</th>
+                <td>";
+        // line 38
+        if (($context["time"] ?? $this->getContext($context, "time"))) {
+            echo " ";
+            echo twig_escape_filter($this->env, twig_number_format_filter($this->env, ($context["time"] ?? $this->getContext($context, "time")), 1, ",", " "), "html", null, true);
+            echo " ";
+        }
+        echo "  ";
+        echo twig_escape_filter($this->env, ($context["time_unit"] ?? $this->getContext($context, "time_unit")), "html", null, true);
+        echo " </td>
+            </tr>
+
+            <tr>
+                <th>Wasdone</th>
+                <td>";
+        // line 43
         if ($this->getAttribute(($context["flight"] ?? $this->getContext($context, "flight")), "wasDone", array())) {
             echo "Yes";
         } else {
@@ -113,24 +140,24 @@ class __TwigTemplate_4db7e0f4dc4b1dcaafedde630148762666f7bc4cec1a1303492850e86ca
     <ul>
         <li>
             <a href=\"";
-        // line 41
+        // line 50
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("flight_index");
         echo "\">Back to the list</a>
         </li>
         <li>
             <a href=\"";
-        // line 44
+        // line 53
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("flight_edit", array("id" => $this->getAttribute(($context["flight"] ?? $this->getContext($context, "flight")), "id", array()))), "html", null, true);
         echo "\">Edit</a>
         </li>
         <li>
             ";
-        // line 47
+        // line 56
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
         echo "
                 <input type=\"submit\" value=\"Delete\">
             ";
-        // line 49
+        // line 58
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
         echo "
         </li>
@@ -156,7 +183,7 @@ class __TwigTemplate_4db7e0f4dc4b1dcaafedde630148762666f7bc4cec1a1303492850e86ca
 
     public function getDebugInfo()
     {
-        return array (  134 => 49,  129 => 47,  123 => 44,  117 => 41,  103 => 34,  96 => 30,  87 => 26,  78 => 22,  71 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  161 => 58,  156 => 56,  150 => 53,  144 => 50,  130 => 43,  116 => 38,  103 => 34,  96 => 30,  87 => 26,  78 => 22,  71 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -200,6 +227,15 @@ class __TwigTemplate_4db7e0f4dc4b1dcaafedde630148762666f7bc4cec1a1303492850e86ca
                 <th>Description</th>
                 <td>{{ flight.description }}</td>
             </tr>
+            <tr>
+                <th> Distance</th>
+                <td>{% if distance %} {{ distance|number_format(2, ',', ' ') }} {%  endif %} {{ unit }}</td>
+            </tr>
+            <tr>
+                <th> Time Travel</th>
+                <td>{% if time %} {{ time|number_format(1, ',', ' ') }} {% endif %}  {{ time_unit}} </td>
+            </tr>
+
             <tr>
                 <th>Wasdone</th>
                 <td>{% if flight.wasDone %}Yes{% else %}No{% endif %}</td>

@@ -1,6 +1,8 @@
 # Learn more about services, parameters and containers at
 # https://symfony.com/doc/current/service_container.html
 parameters:
+    unit: km
+
     #parameter_name: value
 
 services:
@@ -44,3 +46,6 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+    AppBundle\Service\FlightInfo:
+        arguments:
+            $unit: 'km'
